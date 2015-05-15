@@ -89,6 +89,9 @@ function book_review_strongarm() {
   $strongarm->name = 'menu_options_book_review';
   $strongarm->value = array(
     0 => 'features',
+    1 => 'main-menu',
+    2 => 'management',
+    3 => 'navigation',
   );
   $export['menu_options_book_review'] = $strongarm;
 

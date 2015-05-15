@@ -84,7 +84,7 @@ function book_review_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 4,
+      'weight' => 3,
     ),
   );
 
@@ -131,9 +131,13 @@ function book_review_field_default_field_instances() {
   // Exported field_instance: 'node-book_review-field_rating'
   $field_instances['node-book_review-field_rating'] = array(
     'bundle' => 'book_review',
-    'default_value' => NULL,
+    'default_value' => array(
+      0 => array(
+        'value' => '3 ',
+      ),
+    ),
     'deleted' => 0,
-    'description' => 'Rate your book on a scale of 1-5 stars, with one being the poorest rating and five being the best rating!',
+    'description' => 'Rate your book and share your opinion with the world',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -152,7 +156,7 @@ function book_review_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_rating',
     'label' => 'Rating',
-    'required' => 1,
+    'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
     ),
@@ -165,51 +169,13 @@ function book_review_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-book_review-field_rating2'
-  $field_instances['node-book_review-field_rating2'] = array(
-    'bundle' => 'book_review',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'taxonomy',
-        'settings' => array(),
-        'type' => 'taxonomy_term_reference_link',
-        'weight' => 3,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_rating2',
-    'label' => 'Rating2',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_buttons',
-      'weight' => 3,
-    ),
-  );
-
   // Translatables
   // Included for use with string extractors like potx.
   t('Book Author');
   t('Comment');
   t('Enter your review text here');
-  t('Rate your book on a scale of 1-5 stars, with one being the poorest rating and five being the best rating!');
+  t('Rate your book and share your opinion with the world');
   t('Rating');
-  t('Rating2');
   t('Review Body');
 
   return $field_instances;
