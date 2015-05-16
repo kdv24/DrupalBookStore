@@ -13,35 +13,50 @@ function book_review_user_default_permissions() {
   // Exported permission: 'create book_review content'.
   $permissions['create book_review content'] = array(
     'name' => 'create book_review content',
-    'roles' => array(),
+    'roles' => array(
+      'Reviewer' => 'Reviewer',
+      'administrator' => 'administrator',
+    ),
     'module' => 'node',
   );
 
   // Exported permission: 'delete any book_review content'.
   $permissions['delete any book_review content'] = array(
     'name' => 'delete any book_review content',
-    'roles' => array(),
+    'roles' => array(
+      'Reviewer' => 'Reviewer',
+      'administrator' => 'administrator',
+    ),
     'module' => 'node',
   );
 
   // Exported permission: 'delete own book_review content'.
   $permissions['delete own book_review content'] = array(
     'name' => 'delete own book_review content',
-    'roles' => array(),
+    'roles' => array(
+      'Reviewer' => 'Reviewer',
+      'administrator' => 'administrator',
+    ),
     'module' => 'node',
   );
 
   // Exported permission: 'edit any book_review content'.
   $permissions['edit any book_review content'] = array(
     'name' => 'edit any book_review content',
-    'roles' => array(),
+    'roles' => array(
+      'Reviewer' => 'Reviewer',
+      'administrator' => 'administrator',
+    ),
     'module' => 'node',
   );
 
   // Exported permission: 'edit own book_review content'.
   $permissions['edit own book_review content'] = array(
     'name' => 'edit own book_review content',
-    'roles' => array(),
+    'roles' => array(
+      'Reviewer' => 'Reviewer',
+      'administrator' => 'administrator',
+    ),
     'module' => 'node',
   );
 
