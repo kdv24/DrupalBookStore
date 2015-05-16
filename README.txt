@@ -9,7 +9,7 @@
 This web site was built using Drupal core, with Views, Features, Strongarm, CTools, and custom modules and views.
 
 ####View
-Eventually the site will be live at: http://booklandia.pantheon.io
+This site can be viewed live at: http://live-booklandia.pantheon.io/
  
 ####Technologies
  
