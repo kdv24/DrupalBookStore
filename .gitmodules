@@ -1,0 +1,3 @@
+[submodule "sites/all/modules/greetings_submodule"]
+	path = sites/all/modules/greetings_submodule
+	url = https://github.com/kdv24/greetings_submodule.git
